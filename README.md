@@ -42,16 +42,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ---
     
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
- ```
-  python3 -m venv ~/.devops
-  source ~/.devops/bin/activate
----
-    
+ ``` bash
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
 ```
+ 
 * Run `make install` to install the necessary dependencies
 * Run `make lint` to lint the source code
-
----
 
 ### Running `app.py`
 
@@ -59,34 +56,32 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
----
-
 ### Steps for Docker Deployment
 
 * Setup and Configure Docker locally
 * Login docker
-    docker login
+   ` docker login`
 * Create Flask app in Container (Build the image and run)
-    ./run_docker.sh
+    `./run_docker.sh`
 * Upload docker image
-    ./upload_docker.sh
+    `./upload_docker.sh`
 * Make a Prediction (open new terminal)
-    ./make_prediction.sh
+    `./make_prediction.sh`
 
 ### Steps for Kubernetes Deployment
 
 * Setup and Configure Kubernetes locally
 * Install Minikube 
-    curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+    `curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/`
 * Start a cluster using minukube
-    minikube start (or) minikube start --driver=docker 
+    `minikube start (or) minikube start --driver=docker `
 * Verify cluster configurations kubectl config view - look for certificate authority and server
-    kubectl config view
+    `kubectl config view`
 * Run via kubectl
-    ./run_kubernetes.sh
+    `./run_kubernetes.sh`
 * Make a Prediction (open new terminal)
-    ./make_prediction.sh
+    `./make_prediction.sh`
     
 ### Delete Cluster
-  minikube delete
-  minikube stop
+  `minikube delete`
+  `minikube stop`
