@@ -33,11 +33,12 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
   - Install eksctl, kubectl
 
 * Create Keypair and clone the github repos.
-  - ssh-keygen -t rsa
-  - cat /home/ec2-user/.ssh/id_rsa.pub
-  - Copy and add the SSH Key into github
-  - git clone git@github.com:mithragk22/project-ml-microservice-kubernetes.git
-  - cd project-ml-microservice-kubernetes/
+```
+  ssh-keygen -t rsa
+  cat /home/ec2-user/.ssh/id_rsa.pub
+  Copy and add the SSH Key into github
+  git clone git@github.com:mithragk22/project-ml-microservice-kubernetes.git
+  cd project-ml-microservice-kubernetes/
     
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
  ```
