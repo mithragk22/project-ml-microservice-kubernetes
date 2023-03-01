@@ -39,7 +39,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
   Copy and add the SSH Key into github
   git clone git@github.com:mithragk22/project-ml-microservice-kubernetes.git
   cd project-ml-microservice-kubernetes/
----
+```
     
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
  ``` bash
