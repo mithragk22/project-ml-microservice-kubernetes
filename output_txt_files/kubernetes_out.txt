@@ -1,8 +1,19 @@
+Error from server (AlreadyExists): pods "service-api" already exists
 NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
-service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   16m
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   34m
 
 NAME              READY   STATUS    RESTARTS   AGE
-pod/service-api   1/1     Running   0          2m
+pod/service-api   1/1     Running   0          19m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+#Prediction output > ./make_prediction.sh 
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
