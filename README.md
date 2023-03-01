@@ -33,25 +33,30 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
   - Install eksctl, kubectl
 
 * Create Keypair and clone the github repos.
-    ssh-keygen -t rsa
-    cat /home/ec2-user/.ssh/id_rsa.pub
-    Copy and add the SSH Key into github
-    git clone git@github.com:mithragk22/project-ml-microservice-kubernetes.git
-    cd project-ml-microservice-kubernetes/
+  - ssh-keygen -t rsa
+  - cat /home/ec2-user/.ssh/id_rsa.pub
+  - Copy and add the SSH Key into github
+  - git clone git@github.com:mithragk22/project-ml-microservice-kubernetes.git
+  - cd project-ml-microservice-kubernetes/
     
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
-    python3 -m venv ~/.devops
-    source ~/.devops/bin/activate
+ ```
+  python3 -m venv ~/.devops
+  source ~/.devops/bin/activate
     
 ```
 * Run `make install` to install the necessary dependencies
 * Run `make lint` to lint the source code
+
+---
 
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+---
 
 ### Steps for Docker Deployment
 
