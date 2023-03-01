@@ -29,10 +29,10 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 * Create new Environment using cloud 9 
   - Instance type: t2.medium
-  - Memory: 20 GB 
-  - Install eksctl, kubectl
+  - Memory: 20 GB   
 
-* Create Keypair and clone the github repos.
+* Setup the project environment, Create Keypair and clone the github repo.
+  - Install eksctl, kubectl
 ```
   ssh-keygen -t rsa
   cat /home/ec2-user/.ssh/id_rsa.pub
@@ -41,7 +41,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
   cd project-ml-microservice-kubernetes/
 ```
     
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
+* Create a virtual env with Python 3.7 and activate it.
  ``` bash
 python3 -m venv ~/.devops
 source ~/.devops/bin/activate
